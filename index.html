@@ -4,14 +4,77 @@
 
 <head>
 
-  <title>Hello, world!</title>
+  <title>Hello there!</title>
+<style>
+	h1, h2 {
+		text-align: center;
+	}
+	.main {
+		float: left;
+		width: 65%;
+		padding: 8px;
+		height: 90%;
+		border-right: 2px solid Red;
+	}	
+	.column {
+		float: left;
+		width: 45%;
+		height: 95%;
+		padding: 10px;
+	}
+	
+	.sidebar {
+		float: right;
+		width: 30%;
+		padding: 10px;
+		height: 90%
+	}
 
+	.link {
+		font-family: sans-serif;
+		font-size: 0.8em;
+		border: 1px solid LightGray;
+		padding: 4px;
+	}
+
+</style>
 </head>
 
 <body>
-
-  <h1>Hello, world!</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1>Welcome!</h1>
+	<hr>
+	<div class="main">
+		<div class="column">
+			<p>
+			<h2>What is this?</h2>
+			This is the first iteration of my little website. I'm making it because I like the idea of presenting facets of my interests to the world without the guide rails given by social media, and I want to see what arises from the opportunity to create something more freeform. Just me and my text editor, doing it all by hand as much as possible, and sharing what I think might be interesting with the vast void of the internet. 
+			</p>
+		</div>
+		<div class="column">
+			<h2>My Projects</h2>
+			<p>Details coming "soon"...</p>
+				<ul>
+					<li>This whole thing, at present</li>
+					<li>Project Euler's First 100</li>
+					<li>My first PC build</li>
+					<li>Making the perfect seitan lunchmeat</li>
+		</div>
+	</div>
+	<div class="sidebar">
+		<h2>Neat Things</h2>
+		<h4>What I've been listening to:</h4>
+		<iframe style="border: 0; width: 100%; height: 42px;" i
+			src="https://bandcamp.com/EmbeddedPlayer/album=544666640/size=small/bgcol=ffffff/linkcol=63b2cc/transparent=true/" seamless>
+			<a href="https://vitrifiedentity.bandcamp.com/album/eternal-vitreous-dissolve">Eternal Vitreous Dissolve by Vitrified Entity</a>
+		</iframe>
+		<h4>What I've been watching:</h4>
+		<div class="link">
+		<a href="https://www.youtube.com/c/TechnologyConnections/featured">
+			This
+		</a>
+		cool YouTube channel that gives interesting explanations of mundane technologies.
+		</div>
+	</div>
 </body>
 
 </html>
