@@ -1,0 +1,46 @@
+body {
+    background-color:Gray;
+}
+canvas {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p, ul {
+    display:block;
+    font-family: monospace; 
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+}
+h1, h2, h3, h4, input {
+    text-align:center;
+    font-family: monospace;
+    color:#00FF00;
+    text-shadow:1px 1px Black;
+}
+
+h4 {
+    text-align:right;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+
+input {
+    background: DarkGray;
+    border: outset LightGray;
+    margin: 5px;
+}
+
+input:disabled {
+    opacity: 0.5;
+}    
+input[type="range"]::-moz-range-thumb {
+    border-radius:0;
+}

@@ -3,18 +3,15 @@
 <html lang="en">
 
 <head>
-
-  <title>Hello there!</title>
+<title>Hello there!</title>
+<link rel="stylesheet" href="style-main.css">
 <style>
-	h1, h2 {
-		text-align: center;
-	}
 	.main {
 		float: left;
 		width: 65%;
 		padding: 8px;
 		height: 90%;
-		border-right: 2px solid Red;
+		border-right: 2px solid #00FF00;
 	}	
 	.column {
 		float: left;
@@ -31,8 +28,6 @@
 	}
 
 	.link {
-		font-family: sans-serif;
-		font-size: 0.8em;
 		border: 1px solid LightGray;
 		padding: 4px;
 	}
@@ -41,23 +36,27 @@
 </head>
 
 <body>
-	<h1>Welcome!</h1>
+	<h1 id="greeting">Welcome!</h1>
 	<hr>
 	<div class="main">
 		<div class="column">
-			<p>
+			
 			<h2>What is this?</h2>
+			<p>
 			This is the first iteration of my little website. I'm making it because I like the idea of presenting facets of my interests to the world without the guide rails given by social media, and I want to see what arises from the opportunity to create something more freeform. Just me and my text editor, doing it all by hand as much as possible, and sharing what I think might be interesting with the vast void of the internet. 
 			</p>
 		</div>
 		<div class="column">
-			<h2>My Projects</h2>
-			<p>Details coming "soon"...</p>
+			<h2>My Projects, Lately</h2>
+			<p>Details coming "soon"...
 				<ul>
-					<li>This whole thing, at present</li>
+					<li>This whole webpage thing</li>
+					<li> <a href="./life-js/game-of-life.html">Learning Javascript</a></li>
 					<li>Project Euler's First 100</li>
 					<li>My first PC build</li>
-					<li>Making the perfect seitan lunchmeat</li>
+					<li>Raspberry Pi To-Do List Hosting</li>
+                </ul>
+            </p>
 		</div>
 	</div>
 	<div class="sidebar">
@@ -68,13 +67,15 @@
 			<a href="https://vitrifiedentity.bandcamp.com/album/eternal-vitreous-dissolve">Eternal Vitreous Dissolve by Vitrified Entity</a>
 		</iframe>
 		<h4>What I've been watching:</h4>
+		
 		<div class="link">
-		<a href="https://www.youtube.com/c/TechnologyConnections/featured">
-			This
-		</a>
-		cool YouTube channel that gives interesting explanations of mundane technologies.
+		<p>
+		<a href="https://www.youtube.com/c/TechnologyConnections/featured"> This</a> cool YouTube channel that gives interesting explanations of mundane technologies.
+		</p>
 		</div>
+		
 	</div>
+	<script src="scripts/home.js"></script>
 </body>
 
 </html>

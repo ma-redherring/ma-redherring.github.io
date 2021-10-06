@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <meta charset="UTF-8"> 
+<head>
+<link rel="stylesheet" href="../style-main.css">
+<title>Conway's Game of Life</title>
+</head>
+
+<body>
+    <h1>Conway's Game of Life</h1>
+    
+    <canvas id="grid" onmousedown="cell_select(event)" onmousemove="preview(event)" onmouseout="colorSquare_Valid(lastpos.x, lastpos.y)"> </canvas>
+
+    <div class="options">
+        <input type="button" onclick="beginUpdates()" value = "Start" id="start">
+        <input type="button" onclick="stopUpdates()" value = "Stop" id="stop">
+        <input type="button" onclick="clearGrid()" value = "Clear">
+        <input type="button" onclick="makeGlider()" value = "Glider" id="glider">
+    </div>
+    
+    <p> Here's a little toy I built while exploring Javascript. While I'm not as knowledgeable on the mathematical intricacies as I'd like to be, I always find that being able to play with something while you learn about it aids understanding immensely. 
+    
+    I definitely didn't implement this in the most efficient way, but I did learn the basic syntax that I set out to, so mission accomplished.  </p>
+
+    <script src="life.js"></script>
+</body>
+</html>
